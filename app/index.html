@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Xing search </title>
+        <link rel="stylesheet" href="./dist/css/main.min.css">
+    </head>
+    <body>
+        <form id="search-form" class="search-form">
+            <h1 class="form-heading">
+                For a better working life<br/>
+                The new XING Jobs
+            </h1>
+            <div>
+            <div class="category-field">
+                <input type="text" class="keyword-field input-field" placeholder="Enter keyword">
+                <div id="dropdown-list" class="dropdown-list" tabindex="100">
+                    <span class="anchor">in all categories <span class="caret"></span></span>
+                    <div class="categories-dropdown invisible">
+                        <h2 class="category-title">Top Catgeories</h2>
+                        <ul id="top-items" class="top categories-list">
+                            <li class="catgeory">
+                                <label for="top-cat1">
+                                    <input type="checkbox" name="top-cat1"/>
+                                    IT and telecommunication (4440)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat2">
+                                    <input type="checkbox" name="top-cat2"/>
+                                    Other (3636)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat3">
+                                    <input type="checkbox" name="top-cat3"/>
+                                    Sales and commerce (3262)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat4">
+                                    <input type="checkbox" name="top-cat4"/>
+                                    Production, construction and trade (2586)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat5">
+                                    <input type="checkbox" name="top-cat5"/>
+                                    Engineering / technical (2652)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat6">
+                                    <input type="checkbox" name="top-cat6"/>
+                                    Health, medical and social (2130)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat7">
+                                    <input type="checkbox" name="top-cat7"/>
+                                    Management / executive and strategic management (1982)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="top-cat8">
+                                    <input type="checkbox" name="top-cat8"/>
+                                    Finance and accounting (1979)
+                                </label>
+                            </li>
+                        </ul>
+                        <h2 class="category-title">More Categories</h2>
+                        <ul id="more-items" class="more categories-list">
+                            <li class="catgeory">
+                                <label for="more-cat1">
+                                    <input type="checkbox" name="more-cat1"/> 
+                                    Not categorized (1468)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat2">
+                                    <input type="checkbox" name="more-cat2"/>
+                                    Banking, insurance and financial services (1342)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat3">
+                                    <input type="checkbox" name="more-cat3"/>
+                                    Purchasing, transport and logistics (719)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat4">
+                                    <input type="checkbox" name="more-cat4"/>
+                                    Administration (1439)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat5">
+                                    <input type="checkbox" name="more-cat5"/>
+                                    Marketing and advertising (1304)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat6" for="more-cat1">
+                                    <input type="checkbox" name="more-cat6"/>
+                                    Training / instruction (547)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat7">
+                                    <input type="checkbox" name="more-cat7"/>
+                                    Hotel and catering (504)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat8">
+                                    <input type="checkbox" name="more-cat8"/>
+                                    Human resources (514)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat9">
+                                    <input type="checkbox" name="more-cat9"/>Another category (674)
+                                </label>
+                            </li>
+                            <li class="catgeory">
+                                <label for="more-cat10">
+                                    <input type="checkbox" name="more-cat10"/>
+                                    Last category (778)
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" id="location-field" class="location-field input-field typeahead" placeholder="Location">
+            <input type="button" class="search-btn" value="Search">
+        </div>
+        </form>
+
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/typeahead.js/dist/typeahead.bundle.min.js"></script>
+        <script src="./dist/js/main.min.js"></script>
+    </body>
+</html>
